@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .item{
+            background-color: aqua;
+        }
+        .main-container > .item{
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .button {
+            background-color: blue;
+            padding: 10px;
+        }
+        .button.active {
+            background-color: red;
+        }
+        .item1 + .item2{
+            background-color: blueviolet;
+        }
+        input[type="text"]{
+            background-color: yellow;
+            border: 0px;
+            height: 30px;
+            margin: 2px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        container
+        <div class="item">
+            item
+
+        </div>
+
+    </div>
+
+    <div class="main-container">
+        container
+        <div class="item">
+            item
+            <div class="item">
+                item 1
+            </div>
+            <div class="item">
+                item 2
+            </div>
+            <div class="item">
+                item 3
+            </div>
+
+
+
+        </div>
+    </div>
+
+        <button class="button">ปุ่มกด</button>
+        <button class="button active">ปุ่มกด</button>
+
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+
+        <input type="text" name="use">
+        <input type="text" name="pass">
+        <input type="text" name="mail">
+</body>
+</html>
