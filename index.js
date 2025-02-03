@@ -6,10 +6,10 @@ function submitData() {
     let interestDOM = document.querySelectorAll('input[name=interest]:checked');
     let descriptionDOM = document.querySelector('textarea[name=description]');
 
-    let interest='';
-    for(let i=0; i<interestDOM.length; i++){
+    let interest = '';
+    for (let i = 0; i < interestDOM.length; i++) {
         interest += interestDOM[i].value;
-        if (i !=interestDOM.length-1){
+        if (i != interestDOM.length - 1) {
             interest += ',';
         }
     }
@@ -22,5 +22,5 @@ function submitData() {
         description: descriptionDOM.value,
         interest: interest
     }
-    console.log('submit data',userData);
+    console.log('submit data', userData);
 }
